@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Student registration form</title>
+</head>
+
+<body style="background-color: beige;">
+
+  <form action="/submit" method="post">
+
+
+    <caption>
+      <h1>Student Registration Form</h1>
+    </caption>
+
+
+    <br><label for="name">First Name:</label>
+    <input type="name" id="First_Name" name="First_Name" placeholder="Enter your last name" required>
+    <br>
+
+    <br><label for="name">Last Name:</label>
+    <input type="name" id="Last_Name" name="Last_Name" placeholder="Enter your first name" required>
+    <br>
+
+
+
+    <br> <label for="email"> Email:</label>
+    <input type="email" placeholder="Enter your email" />
+    <br>
+
+
+    <!-- phone number -->
+    <br><label for="number">Phone:</label>
+    <input type="tel" id="Phone" name="Phone" placeholder="e.g. 08012345678 or +2348012345678"
+      pattern="(\+234|0)[0-9]{10}" required>
+    <br>
+
+
+    <!-- Age  -->
+    <br><label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="0" max="120" required>
+    <br>
+
+
+
+    <!--<Gender (Use either a dropdown list or radio buttons
+      to let the user select their gender)>-->
+
+    <br> <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value=""> </option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select> <br>
+
+
+
+
+    <!--<Course of Study (e.g., dropdown list with options
+ like Mathematics, Science, History, etc.)>-->
+
+
+    <br> <label>Select your skills:</label><br>
+    <br><input type="checkbox" name="skills" value="PM">Project Management<br>
+    <br><input type="checkbox" name="skills" value="SE">Software Engineering<br>
+    <br> <input type="checkbox" name="skills" value="Math">Mathematics<br>
+    <br> <input type="checkbox" name="skills" value="History">History<br>
+    <br> <input type="checkbox" name="skills" value="Economics">Economics<br>
+    <br><input type="checkbox" name="skills" value="English">English<br>
+    <br> <input type="checkbox" name="skills" value="Music">Music<br>
+    <br><input type="checkbox" name="skills" value="Philosophy">Philosophy
+    <br>
+
+
+    <!--<Enrollment Date (optional)>-->
+
+    <br> <label for="enrollment_date">Enrollment Date:(optional)</label><br>
+    <input type="date" id="enrollment_date" name="enrollment_date" optional>
+    <br>
+
+    <div style="text-align: center;">
+      <button type="submit" style="background-color: green; color: white; padding: 15px 30px; font-size: 18px;">
+        Submit!
+      </button>
+    </div>
+
+    <!--<input type = "submit" value="Submit"/> -->
+
+    </br>
+
+  </form>
+
+
+  <br>
+
+
+  <br>
+
+
+
+
+  <table border="1" width="600" cellspacing="0" cellpadding="10" align="center">
+
+
+    <caption>
+      <h1>Registered Students</h1>
+    </caption>
+
+    <tr>
+
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email Address</th>
+      <th>Phone Number</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Course of Study</th>
+      <th>Enrollment Date (if applicable)</th>
+
+    </tr>
+
+    <tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>john.doe@email.com</td>
+      <td>08012345678</td>
+      <td>25</td>
+      <td>Male</td>
+      <td>Software Engineering</td>
+      <td>2026-04-01</td>
+    </tr>
+
+    <tr>
+      <td>Mary</td>
+      <td>Johnson</td>
+      <td>mary.johnson@email.com</td>
+      <td>08123456789</td>
+      <td>28</td>
+      <td>Female</td>
+      <td>Philosophy</td>
+      <td>2026-03-15</td>
+    </tr>
+
+    <tr>
+      <td>David</td>
+      <td>Williams</td>
+      <td>david.w@email.com</td>
+      <td>07034567890</td>
+      <td>22</td>
+      <td>Male</td>
+      <td>English</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Grace</td>
+      <td>Brown</td>
+      <td>grace.brown@email.com</td>
+      <td>09045678901</td>
+      <td>30</td>
+      <td>Female</td>
+      <td>Project Management</td>
+      <td>2026-02-20</td>
+    </tr>
+
+    <tr>
+      <td>Michael</td>
+      <td>Smith</td>
+      <td>michael.smith@email.com</td>
+      <td>08056789012</td>
+      <td>27</td>
+      <td>Male</td>
+      <td>Mathematics</td>
+      <td>2026-01-10</td>
+    </tr>
+
+    <tr>
+      <td>Fatima</td>
+      <td>Ali</td>
+      <td>fatima.ali@email.com</td>
+      <td>08167890123</td>
+      <td>24</td>
+      <td>Female</td>
+      <td>Music</td>
+      <td></td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
